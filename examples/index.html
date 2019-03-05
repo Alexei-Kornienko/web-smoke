@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+        <style>
+        .img-container { position: relative; }
+        .img-container .top {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div class="img-container">
+                        <img class="bottom" src="expected/google.com.png" alt="google.com" />
+                        <img class="top" src="actual//google.com-diff.png" alt="diff" />
+                    </div>
+                </td>
+                <td>
+                    <div class="img-container">
+                        <img class="bottom" src="actual/google.com.png" alt="google.com" />
+                        <img class="top" src="actual/google.com-diff.png" alt="diff" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
