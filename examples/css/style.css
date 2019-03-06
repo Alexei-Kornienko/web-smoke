@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.header {
+    border-bottom: 1px solid red;
+    margin-bottom: 40px;
+}
+
+.header__heading {
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.comparison-block {
+    width: 100%;
+    background-color: #9e9e9e;
+    margin-bottom: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.comparison-control {
+    margin-bottom: 20px;
+}
+
+.comparison-control__collapse {
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin-bottom: 5px;
+    background-color: #e0e0e0;
+    outline: none;
+    transition: all .1s linear;
+}
+
+.comparison-control__collapse:active {
+    background-color: #bbbbbb;
+}
+
+.comparison-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comparison-image-wrapper {
+    flex-basis: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+.comparison-image-wrapper__left {
+    margin-right: 5px;
+}
+
+.comparison-image-wrapper__right {
+    margin-left: 5px;
+}
+
+.comparison-image-block {
+    position: relative;
+}
+
+.comparison-image-block > .comparison-image {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.comparison-diff {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.comparison-diff__hidden {
+    display: none;
+}
+
+.comparison-image-control {
+    background-color: #25b47d;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+}
+
+.comparison-image-control__button {
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: #e9a831;
+    transition: all .1s linear;
+    color: inherit;
+    padding: 0 10px;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comparison-image-control__button:active {
+    background-color: #91681d;
+}
+
+@media screen and (max-width: 767px) {
+    .comparison-content {
+        flex-direction: column;
+    }
+
+    .comparison-image-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

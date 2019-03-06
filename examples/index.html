@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB smoke</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading">WEB smoke image comparison</h1>
+    </header>
+
+    <main class="container">
+        <div class="comparison-block">
+            <div class="comparison-control">
+                <button type="button" class="comparison-control__collapse" data-toggle-id="comparison-block-1">Collapse</button>
+            </div>
+
+            <div class="comparison-content" id="comparison-block-1">
+                <div class="comparison-image-wrapper comparison-image-wrapper__left">
+                    <div class="comparison-image-control">
+                        <span>Actual result</span>
+                        <button type="button" class="comparison-image-control__button" data-toggle-id="comparison-diff-1">Show difference</button>
+                    </div>
+
+                    <div class="comparison-image-block">
+                        <img src="img/actual/google.com.png" class="comparison-image" alt="">
+
+                        <img src="img/actual/google.com-diff.png" class="comparison-diff" id="comparison-diff-1" alt="">
+                    </div>
+                </div>
+
+                <div class="comparison-image-wrapper comparison-image-wrapper__right">
+                    <div class="comparison-image-control">
+                        Expected result
+                    </div>
+
+                    <div class="comparison-image-block">
+                        <img src="img/expected/google.com.png" class="comparison-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-block">
+            <div class="comparison-control">
+                <button type="button" class="comparison-control__collapse" data-toggle-id="comparison-block-2">Collapse</button>
+            </div>
+
+            <div class="comparison-content" id="comparison-block-2">
+                <div class="comparison-image-wrapper comparison-image-wrapper__left">
+                    <div class="comparison-image-control">
+                        <span>Actual result</span>
+                        <button type="button" class="comparison-image-control__button" data-toggle-id="comparison-diff-2">Show difference</button>
+                    </div>
+
+                    <div class="comparison-image-block">
+                        <img src="img/actual/google.com.png" class="comparison-image" alt="">
+
+                        <img src="img/actual/google.com-diff.png" class="comparison-diff" id="comparison-diff-2" alt="">
+                    </div>
+                </div>
+
+                <div class="comparison-image-wrapper comparison-image-wrapper__right">
+                    <div class="comparison-image-control">
+                        Expected result
+                    </div>
+
+                    <div class="comparison-image-block">
+                        <img src="img/expected/google.com.png" class="comparison-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
