@@ -15,10 +15,10 @@
         {% for test in tests %}
         <div class="comparison-block">
             <div class="comparison-control">
-                <button type="button" class="comparison-control__collapse {% if test.passed %}green{% else %}red{% endif %}" data-toggle-id="comparison-block-1">{{ test.name }}</button>
+                <button type="button" class="comparison-control__collapse {% if test.passed %}green{% else %}red{% endif %}" data-toggle-id="comparison-block-{{ loop.index }}">{{ test.name }}</button>
             </div>
 
-            <div class="comparison-content" id="comparison-block-1">
+            <div class="comparison-content" id="comparison-block-{{ loop.index }}" hidden>
                 <div class="comparison-image-wrapper comparison-image-wrapper__left">
                     <div class="comparison-image-control">
                         Expected result
