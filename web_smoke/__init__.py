@@ -1,1 +1,0 @@
-from WebSmokeTest import WebSmokeTest

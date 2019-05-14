@@ -21,11 +21,6 @@ class WebSmokeTest(unittest.TestCase):
         self._driver = webdriver.Chrome()
         self._timeout = 5
 
-    def test_google_com(self):
-        self.load('https://www.google.com/?hl=en')
-        #self.wait(2)
-        self.assert_image('google.com')
-
     def load(self, url):
         self._driver.get(url)
 
