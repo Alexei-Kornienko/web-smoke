@@ -46,7 +46,7 @@ class WebSmokeTest(unittest.TestCase):
     def _compare_image(self, expected_path, actual_path):
         expected = cv2.imread(expected_path)
 
-        if not expected:
+        if expected is None:
             self.fail('No expected image available')
             return
         actual = cv2.imread(actual_path)
