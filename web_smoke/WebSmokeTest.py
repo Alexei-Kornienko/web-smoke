@@ -18,8 +18,11 @@ class WebSmokeTest(unittest.TestCase):
             raise ValueError('ACTUAL_DIR value has to be provided to run tests')
         if not os.path.exists(self.ACTUAL_DIR):
             os.makedirs(self.ACTUAL_DIR)
-        self._driver = webdriver.Chrome()
+        self._driver = self._create_driver()
         self._timeout = 5
+
+    def _create_driver(self):
+        return webdriver.Chrome()
 
     def load(self, url):
         self._driver.get(url)
